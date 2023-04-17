@@ -5,6 +5,7 @@ import profilePicture from "../../public/images/profile/profilepicture1.jpg";
 import AnimatedText from "@/components/AnimatedText";
 import Link from "next/link";
 import { LinkArrow } from "@/components/Icons";
+import HireMe from "@/components/HireMe";
 
 export default function Home() {
   return (
@@ -16,17 +17,10 @@ export default function Home() {
       <main className="flex items-center text-dark w-full min-h-screen">
         <Layout>
           <div className="flex item-center justify-between w-full ">
-            <div className="w-1/2">
-              <Image
-                src={profilePicture}
-                alt="portfoliopic1"
-                className="w-full h-auto"
-              />
-            </div>
             <div className="w-1/2 flex flex-col items-center self-center">
               <AnimatedText
-                text="Welcome to my portfolio!"
-                className="!text-5xl !text-left"
+                text="Engineering Interfaces That Spark Joy and Engagement!"
+                className="!text-6xl !text-left"
               />
               <p className="my-4 text-base font-medium ">
                 I'm a frontend developer with a passion for creating beautiful
@@ -52,8 +46,17 @@ export default function Home() {
                 </Link>
               </div>
             </div>
+            <div className="w-1/2">
+              <Image
+                src={profilePicture}
+                alt="portfoliopic1"
+                className="w-full h-auto"
+              />
+            </div>
           </div>
         </Layout>
+
+        <HireMe />
       </main>
     </>
   );
