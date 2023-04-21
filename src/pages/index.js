@@ -6,7 +6,7 @@ import AnimatedText from "@/components/AnimatedText";
 import Link from "next/link";
 import { LinkArrow } from "@/components/Icons";
 import HireMe from "@/components/HireMe";
-
+import bulb from "../../public/images/svgs/bulb.svg";
 export default function Home() {
   return (
     <>
@@ -17,6 +17,13 @@ export default function Home() {
       <main className="flex items-center text-dark w-full min-h-screen">
         <Layout>
           <div className="flex item-center justify-between w-full ">
+            <div className="w-1/2">
+              <Image
+                src={profilePicture}
+                alt="portfoliopic1"
+                className="w-full h-auto"
+              />
+            </div>
             <div className="w-1/2 flex flex-col items-center self-center">
               <AnimatedText
                 text="Engineering Interfaces That Spark Joy and Engagement!"
@@ -28,6 +35,7 @@ export default function Home() {
                 articles, showcasing my expertise in React.js and web
                 development
               </p>
+
               <div className="flex items-center self-start mt-2 ">
                 <Link
                   href="/FurkanFiratResume.pdf"
@@ -45,13 +53,9 @@ export default function Home() {
                   Contact
                 </Link>
               </div>
-            </div>
-            <div className="w-1/2">
-              <Image
-                src={profilePicture}
-                alt="portfoliopic1"
-                className="w-full h-auto"
-              />
+              <div className="absolute right-8 bottom-8 inline-block w-28">
+                <Image src={bulb} alt="portfolio" className="w-full h-auto" />
+              </div>
             </div>
           </div>
         </Layout>

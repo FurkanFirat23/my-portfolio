@@ -2,7 +2,7 @@ import Link from "next/link";
 import React from "react";
 import Logo from "./Logo";
 import { useRouter } from "next/router";
-import { GithubIcon, LinkedInIcon } from "./Icons";
+import { GithubIcon, LinkedInIcon, MediumIcon } from "./Icons";
 import { motion } from "framer-motion";
 const CustomLink = ({ href, title, className = "" }) => {
   const router = useRouter();
@@ -45,10 +45,19 @@ const Navbar = () => {
           href="https://www.linkedin.com/in/furkan-firat23/"
           target={"_blank"}
           whileHover={{ y: -2 }}
-          className="w-6 ml-3"
+          className="w-6 ml-3 mr-3"
           whileTap={{ scale: 0.8 }}
         >
           <LinkedInIcon />
+        </motion.a>
+        <motion.a
+          href="https://medium.com/@furkan.0096/"
+          target={"_blank"}
+          whileHover={{ y: -2 }}
+          className="w-6 ml-3"
+          whileTap={{ scale: 0.8 }}
+        >
+          <MediumIcon />
         </motion.a>
       </nav>
       <div className="absolute left-[50%] top-2 translate-x-[-50%] bottom-4">
