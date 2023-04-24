@@ -5,6 +5,8 @@ import Image from "next/image";
 import React, { useEffect, useRef } from "react";
 import pphd from "../../public/images/profile/pphd.jpg";
 import { useInView, useMotionValue, useSpring } from "framer-motion";
+import Skills from "@/components/Skills";
+import Experience from "@/components/Experience";
 
 const AnimatedNumbers = ({ value }) => {
   const ref = useRef(null);
@@ -48,37 +50,29 @@ const about = () => {
               </h2>
 
               <p className="font-medium">
-                Hi, My name is Furkan, and I'm a frontend developer. I graduated
-                from Yildiz Technical University with a degree in Civil
-                Engineering, but I've always been interested in the tech
-                industry. After careful consideration, I decided to pursue a
-                career in frontend development and have been working hard to
-                acquire the necessary skills.
+                My name is Furkan, and I'm a frontend developer. Despite having
+                a degree in Civil Engineering from Yildiz Technical University,
+                I have always been interested in the tech industry. After
+                completing a Beginner Front End Web Development Certificate from
+                Patika.dev, I decided to pursue a career in frontend
+                development.
               </p>
               <p className="font-medium my-4">
-                To kickstart my journey, I obtained a Beginner Front End Web
-                Development Certificate from Patika.dev, and then completed a
-                Bootcamp acceleration program to prepare for boot camps. I
-                further honed my technical skills by successfully completing the
-                React Bootcamp, where I worked in groups and participated in
-                interactive activities that improved my communication skills.
+                To prepare for my career, I participated in a Bootcamp
+                acceleration program and completed the React Bootcamp, where I
+                worked in groups and participated in interactive activities that
+                improved my communication skills. I have a keen ability to learn
+                quickly and approach challenges with innovation and timeliness,
+                and I'm always looking to enhance my expertise by staying
+                up-to-date with the latest advancements in frontend development
+                technologies.
               </p>
               <p className="font-medium my-4">
-                Currently, I'm focused on staying up-to-date with the latest
-                advancements in frontend development technologies. Throughout
-                this process, I've demonstrated a keen ability to learn quickly
-                and approach challenges with innovation and timeliness. My
-                passion for frontend development drives me to constantly seek
-                out new skills and knowledge to enhance my expertise.
-              </p>
-              <p className="font-medium my-4">
-                I'm excited about the opportunity to contribute my skills to any
-                engineering position. With my experience and drive, I'm
-                confident that I can excel in any role in frontend development.
-              </p>
-              <p className="font-medium my-4">
-                Thank you for visiting my portfolio, and feel free to get in
-                touch with me if you have any questions or opportunities.
+                I'm confident that my passion for frontend development, coupled
+                with my experience and drive, would make me an asset in any
+                engineering position. Thank you for visiting my portfolio, and
+                please feel free to contact me if you have any questions or
+                opportunities.
               </p>
             </div>
 
@@ -118,6 +112,9 @@ const about = () => {
               </div>
             </div>
           </div>
+
+          <Skills />
+          <Experience />
         </Layout>
       </main>
     </>
