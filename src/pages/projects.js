@@ -8,7 +8,8 @@ import React from "react";
 import project1 from "../../public/images/projects/KanbanBoard.png";
 const FeaturedProject = ({ type, title, summary, img, link, github }) => {
   return (
-    <article className="w-full flex items-center justify-between rounded-3xl border border-solid border-dark bg-light shadow-2xl p-8">
+    <article className="w-full flex items-center justify-between rounded-3xl border border-solid border-dark bg-light shadow-2xl p-8 relative rounded-br-2xl">
+      <div className="absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2.5rem] bg-dark rounded-br-3xl" />
       <Link
         href={link}
         target="_blank"
@@ -47,6 +48,7 @@ const FeaturedProject = ({ type, title, summary, img, link, github }) => {
 const Project = ({ title, type, img, link, github }) => {
   return (
     <article className="w-full flex flex-col items-center justify-center rounded-2xl border border-solid border-dark bg-light mt-4 relative ">
+      <div className="absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-[2rem] bg-dark rounded-br-3xl" />
       <Link
         href={link}
         target="_blank"
@@ -65,16 +67,16 @@ const Project = ({ title, type, img, link, github }) => {
           <h2 className="my-2 w-full text-left text-3xl font-bold">{title}</h2>
         </Link>
 
-        <div className="mt-2 flex items-center ">
-          <Link href={github} target="_blank" className="w-10 ">
-            <GithubIcon />
-          </Link>
+        <div className="w-full mt-2 flex items-center justify-between">
           <Link
             href={link}
             target="_blank"
-            className="ml-4 text-lg font-semibold hover:bg-light hover:text-dark border-2 border-solid border-transparent hover:border-dark duration-500 ease-in-out"
+            className="text-lg font-semibold hover:bg-light hover:text-dark border-2 border-solid border-transparent hover:border-dark duration-500 ease-in-out"
           >
             Visit
+          </Link>
+          <Link href={github} target="_blank" className="w-8  ">
+            <GithubIcon />
           </Link>
         </div>
       </div>
@@ -95,7 +97,40 @@ const projects = () => {
             text="Innovative Ventures: A Showcase of My Projects"
             className="mb-16"
           />
-          <div className="grid grid-col-12 gap-24 ">
+          <div className="grid grid-col-12 gap-24 gap-y-32">
+            <div className="col-span-12">
+              <FeaturedProject
+                title="Kanban Board"
+                img={project1}
+                summary="Platform offers three main features to make task management easier and more efficient for users: Drag-n-Drop for easy rearrangement of tasks, Delete and Add for flexibility in task management, and Update/Edit for making changes to tasks without losing progress. These features provide a seamless experience for users to keep everything organized and running smoothly.
+            "
+                link="/"
+                github="/"
+                type="Featured Project"
+              />
+            </div>
+            <div className="col-span-6">
+              <Project
+                title="RealtorFF"
+                img={project1}
+                summary="Platform offers three main features to make task management easier and more efficient for users: Drag-n-Drop for easy rearrangement of tasks, Delete and Add for flexibility in task management, and Update/Edit for making changes to tasks without losing progress. These features provide a seamless experience for users to keep everything organized and running smoothly.
+            "
+                link="/kanban-board-ruddy.vercel.app/"
+                github="/https://github.com/FurkanFirat23/Kanban-Board"
+                type="Featured Project"
+              />
+            </div>
+            <div className="col-span-6">
+              <Project
+                title="RealtorFF"
+                img={project1}
+                summary="Platform offers three main features to make task management easier and more efficient for users: Drag-n-Drop for easy rearrangement of tasks, Delete and Add for flexibility in task management, and Update/Edit for making changes to tasks without losing progress. These features provide a seamless experience for users to keep everything organized and running smoothly.
+            "
+                link="/kanban-board-ruddy.vercel.app/"
+                github="/https://github.com/FurkanFirat23/Kanban-Board"
+                type="Featured Project"
+              />
+            </div>
             <div className="col-span-12">
               <FeaturedProject
                 title="Kanban Board"
@@ -118,10 +153,17 @@ const projects = () => {
                 type="Featured Project"
               />
             </div>
-            <div className="col-span-6">Project-2</div>
-            <div className="col-span-12">Featured Project</div>
-            <div className="col-span-6">Project-3</div>
-            <div className="col-span-6">Project-4</div>
+            <div className="col-span-6">
+              <Project
+                title="RealtorFF"
+                img={project1}
+                summary="Platform offers three main features to make task management easier and more efficient for users: Drag-n-Drop for easy rearrangement of tasks, Delete and Add for flexibility in task management, and Update/Edit for making changes to tasks without losing progress. These features provide a seamless experience for users to keep everything organized and running smoothly.
+            "
+                link="/kanban-board-ruddy.vercel.app/"
+                github="/https://github.com/FurkanFirat23/Kanban-Board"
+                type="Featured Project"
+              />
+            </div>
           </div>
         </Layout>
       </main>
