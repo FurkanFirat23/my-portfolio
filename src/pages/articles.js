@@ -52,10 +52,17 @@ const MovingImg = ({ img, title, link }) => {
 
 const Article = ({ img, title, date, link }) => {
   return (
-    <li className="relative w-full p-4 py-6 my-4 rounded-xl flex items-center justify-between bg-light text-dark first:mt-0 border border-solid border-dark border-r-4 border-b-4">
+    <motion.li
+      initial={{ y: 200 }}
+      whileInView={{ y: 0, transition: { duration: 0.5, ease: "easeInOut" } }}
+      viewport={{ once: true }}
+      className="relative w-full p-4 py-6 my-4 rounded-xl flex items-center justify-between bg-light text-dark first:mt-0 border border-solid border-dark border-r-4 border-b-4 dark:border-light dark:bg-dark dark:text-light"
+    >
       <MovingImg title={title} img={img} link={link} />
-      <span className="text-primary font-semibold pl-4 ">{date}</span>
-    </li>
+      <span className="text-primary font-semibold pl-4 dark:text-secondary">
+        {date}
+      </span>
+    </motion.li>
   );
 };
 
@@ -65,7 +72,7 @@ const FeaturedArticle = ({ img, title, time, summary, link }) => {
       initial={{ y: 200 }}
       whileInView={{ y: 0, transition: { duration: 0.5, ease: "easeInOut" } }}
       viewport={{ once: true }}
-      className="relative col-span-1 w-full p-4 bg-light border border-solid border-dark rounded-2xl "
+      className="relative col-span-1 w-full p-4 bg-light border border-solid border-dark rounded-2xl dark:border-light dark:bg-dark dark:text-light "
     >
       <div className="absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-[2rem] bg-dark rounded-br-3xl" />
 
@@ -87,8 +94,10 @@ const FeaturedArticle = ({ img, title, time, summary, link }) => {
           {title}
         </h2>
       </Link>
-      <p className="my-2 test-sm text-dark ">{summary}</p>
-      <span className="text-primary font-semibold text-xl ">{time}</span>
+      <p className="my-2 test-sm text-dark dark:text-light">{summary}</p>
+      <span className="text-primary font-semibold text-xl dark:text-secondary">
+        {time}
+      </span>
     </motion.li>
   );
 };
@@ -101,7 +110,7 @@ const articles = () => {
         <meta name="description" content="any description" />
       </Head>
 
-      <main className="w-full mb-16 flex flex-col items-center justify-center overflow-hidden ">
+      <main className="w-full mb-16 flex flex-col items-center justify-center overflow-hidden dark:text-light">
         <Layout className="pt-16">
           <AnimatedText
             text="Insights and Inspiration: A Collection of My Portfolio Articles"

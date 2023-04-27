@@ -1,37 +1,41 @@
 import React from "react";
+import { motion } from "framer-motion";
+
+const Skill = ({ name, x, y }) => {
+  return (
+    <motion.div
+      className="flex items-center justify-center rounded-full font-semibold bg-dark text-light py-3 px-6 shadow-dark cursor-pointer absolute  dark:text-dark dark:bg-light"
+      whileHover={{ scale: 1.1 }}
+      initial={{ x: 0, y: 0 }}
+      whileInView={{ x: x, y: y, transition: { duration: 1.5 } }}
+      viewport={{ once: true }}
+    >
+      {name}
+    </motion.div>
+  );
+};
 
 const Skills = () => {
   return (
-    <div className="bg-gradient-to-r from-indigo-400 to-purple-500 h-screen flex flex-col items-center justify-center">
-      <h1 className="text-5xl font-bold text-white mb-8">My Skills</h1>
-      <div className="bg-white rounded-lg shadow-xl p-8 max-w-3xl w-full">
-        <h2 className="text-3xl font-bold mb-6">Web Development</h2>
-        <ul className="list-disc ml-8 mb-6">
-          <li className="mb-2">
-            <span className="text-indigo-600 font-bold">HTML/CSS:</span>{" "}
-            Semantic HTML and modern CSS techniques, including flexbox and grid
-            layouts, CSS preprocessors such as Sass, and CSS frameworks such as
-            Bootstrap and Tailwind CSS.
-          </li>
-          <li className="mb-2">
-            <span className="text-indigo-600 font-bold">JavaScript:</span> ES6+
-            syntax, asynchronous programming, and popular frameworks and
-            libraries such as ReactJS and NextJS.
-          </li>
-          <li className="mb-2">
-            <span className="text-indigo-600 font-bold">Node.js:</span> Building
-            server-side applications using Node.js and popular libraries such as
-            Express.js and Socket.io.
-          </li>
-          <li className="mb-2">
-            <span className="text-indigo-600 font-bold">Database:</span> Working
-            with databases such as MongoDB, MySQL, Firebase and implementing
-            data models and querying data using Object-Relational Mapping (ORM)
-            tools such as Mongoose and Sequelize.
-          </li>
-        </ul>
+    <>
+      <h2 className="font-bold text-8xl mt-64 w-full text-center"> Skills</h2>
+      <div className="w-full h-screen relative flex items-center justify-center rounded-full bg-circularLight dark:bg-circularDark ">
+        <motion.div
+          className="flex items-center justify-center rounded-full font-semibold bg-dark text-light p-8 shadow-dark cursor-pointer dark:text-dark dark:bg-light"
+          whileHover={{ scale: 1.1 }}
+        >
+          Web
+        </motion.div>
+        <Skill name="HTML" x="-25vw" y="2vw" />
+        <Skill name="CSS" x="-3vw" y="-9vw" />
+        <Skill name="Javascript" x="20vw" y="6vw" />
+        <Skill name="ReactJS" x="0vw" y="12vw" />
+        <Skill name="NextJS" x="20vw" y="-15vw" />
+        <Skill name="Figma" x="0vw" y="-22vw" />
+        <Skill name="Firebase" x="-25vw" y="-15vw" />
+        <Skill name="TailwindCSS" x="18vw" y="18vw" />
       </div>
-    </div>
+    </>
   );
 };
 
