@@ -25,6 +25,8 @@ const FeaturedProject = ({ type, title, summary, img, link, github }) => {
           className="w-full h-auto"
           whileHover={{ scale: 1.05 }}
           transition={{ duration: 0.3 }}
+          priority
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
         />
       </Link>
 
@@ -141,8 +143,8 @@ const projects = () => {
                 img={project1}
                 summary="Platform offers three main features to make task management easier and more efficient for users: Drag-n-Drop for easy rearrangement of tasks, Delete and Add for flexibility in task management, and Update/Edit for making changes to tasks without losing progress. These features provide a seamless experience for users to keep everything organized and running smoothly.
             "
-                link="/kanban-board-ruddy.vercel.app/"
-                github="/https://github.com/FurkanFirat23/Kanban-Board"
+                link="kanban-board-ruddy.vercel.app/"
+                github="https://github.com/FurkanFirat23/Kanban-Board"
                 type="Featured Project"
               />
             </div>
@@ -152,8 +154,8 @@ const projects = () => {
                 img={project1}
                 summary="Platform offers three main features to make task management easier and more efficient for users: Drag-n-Drop for easy rearrangement of tasks, Delete and Add for flexibility in task management, and Update/Edit for making changes to tasks without losing progress. These features provide a seamless experience for users to keep everything organized and running smoothly.
             "
-                link="/kanban-board-ruddy.vercel.app/"
-                github="/https://github.com/FurkanFirat23/Kanban-Board"
+                link="kanban-board-ruddy.vercel.app/"
+                github="https://github.com/FurkanFirat23/Kanban-Board"
                 type="Featured Project"
               />
             </div>
@@ -163,8 +165,8 @@ const projects = () => {
                 img={project1}
                 summary="Platform offers three main features to make task management easier and more efficient for users: Drag-n-Drop for easy rearrangement of tasks, Delete and Add for flexibility in task management, and Update/Edit for making changes to tasks without losing progress. These features provide a seamless experience for users to keep everything organized and running smoothly.
             "
-                link="/kanban-board-ruddy.vercel.app/"
-                github="/https://github.com/FurkanFirat23/Kanban-Board"
+                link="kanban-board-ruddy.vercel.app/"
+                github="https://github.com/FurkanFirat23/Kanban-Board"
                 type="Featured Project"
               />
             </div>
@@ -174,8 +176,8 @@ const projects = () => {
                 img={project1}
                 summary="Platform offers three main features to make task management easier and more efficient for users: Drag-n-Drop for easy rearrangement of tasks, Delete and Add for flexibility in task management, and Update/Edit for making changes to tasks without losing progress. These features provide a seamless experience for users to keep everything organized and running smoothly.
             "
-                link="/kanban-board-ruddy.vercel.app/"
-                github="/https://github.com/FurkanFirat23/Kanban-Board"
+                link="kanban-board-ruddy.vercel.app/"
+                github="https://github.com/FurkanFirat23/Kanban-Board"
                 type="Featured Project"
               />
             </div>
@@ -185,8 +187,8 @@ const projects = () => {
                 img={project1}
                 summary="Platform offers three main features to make task management easier and more efficient for users: Drag-n-Drop for easy rearrangement of tasks, Delete and Add for flexibility in task management, and Update/Edit for making changes to tasks without losing progress. These features provide a seamless experience for users to keep everything organized and running smoothly.
             "
-                link="/kanban-board-ruddy.vercel.app/"
-                github="/https://github.com/FurkanFirat23/Kanban-Board"
+                link="kanban-board-ruddy.vercel.app/"
+                github="https://github.com/FurkanFirat23/Kanban-Board"
                 type="Featured Project"
               />
             </div>
