@@ -11,7 +11,7 @@ const Footer = () => {
           <span className="text-primary dark:text-secondary text-2xl px-1">
             &#9825;
           </span>
-          by &nbsp;Furkan Firat
+          by &nbsp;Furkan FIRAT
         </div>
       </Layout>
     </footer>
