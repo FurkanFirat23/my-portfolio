@@ -53,12 +53,12 @@ const about = () => {
               </h2>
 
               <p className="font-medium">
-                My name is Furkan, and I'm a frontend developer. Despite having
-                a degree in Civil Engineering from Yildiz Technical University,
-                I have always been interested in the tech industry. After
-                completing a Beginner Front End Web Development Certificate from
-                Patika.dev, I decided to pursue a career in frontend
-                development.
+                My name is Furkan, and I&apos;m a frontend developer. Despite
+                having a degree in Civil Engineering from Yildiz Technical
+                University, I have always been interested in the tech industry.
+                After completing a Beginner Front End Web Development
+                Certificate from Patika.dev, I decided to pursue a career in
+                frontend development.
               </p>
               <p className="font-medium my-4">
                 To prepare for my career, I participated in a Bootcamp
@@ -66,15 +66,15 @@ const about = () => {
                 worked in groups and participated in interactive activities that
                 improved my communication skills. I have a keen ability to learn
                 quickly and approach challenges with innovation and timeliness,
-                and I'm always looking to enhance my expertise by staying
+                and I&apos;m always looking to enhance my expertise by staying
                 up-to-date with the latest advancements in frontend development
                 technologies.
               </p>
               <p className="font-medium my-4">
-                I'm confident that my passion for frontend development, coupled
-                with my experience and drive, would make me an asset in any
-                engineering position. Thank you for visiting my portfolio, and
-                please feel free to contact me if you have any questions or
+                I&apos;m confident that my passion for frontend development,
+                coupled with my experience and drive, would make me an asset in
+                any engineering position. Thank you for visiting my portfolio,
+                and please feel free to contact me if you have any questions or
                 opportunities.
               </p>
             </div>
