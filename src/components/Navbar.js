@@ -192,9 +192,7 @@ const Navbar = () => {
               href="https://medium.com/@furkan.0096/"
               target={"_blank"}
               whileHover={{ y: -2 }}
-              className={`w-6 ml-3 sm:mx-1  ${
-                mode === "dark" ? "bg-light text-dark" : " text-light bg-light"
-              }`}
+              className="w-6 ml-3 sm:mx-1 text-light bg-light  dark:bg-light dark:text-dark"
               whileTap={{ scale: 0.8 }}
             >
               <MediumIcon />
@@ -206,9 +204,9 @@ const Navbar = () => {
               onClick={() => setMode(mode === "light" ? "dark" : "light")}
             >
               {mode === "dark" ? (
-                <SunIcon className={"fill dark "} />
+                <SunIcon className={"w-24 fill dark "} />
               ) : (
-                <MoonIcon className={"fill dark "} />
+                <MoonIcon className={"w-24 fill dark "} />
               )}
             </button>
           </nav>
