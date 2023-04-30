@@ -1,5 +1,5 @@
 import Link from "next/link";
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Logo from "./Logo";
 import { useRouter } from "next/router";
 import {
@@ -56,31 +56,43 @@ const CustomMobileLink = ({ href, title, className = "", toggle }) => {
 const Navbar = () => {
   const [mode, setMode] = useThemeSwitcher();
   const [isOpen, setIsOpen] = useState(false);
+  const menuRef = useRef(null); // create a ref for the menu element
   const handleClicked = () => {
     setIsOpen(!isOpen);
   };
+  const handleClickOutside = (event) => {
+    if (menuRef.current && !menuRef.current.contains(event.target)) {
+      setIsOpen(false);
+    }
+  };
+  useEffect(() => {
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, []);
 
   return (
     <header className="flex w-full px-32 py-8 font-medium items-center justify-between dark:text-light relative z-10 lg:px-16 md:px-12 sm:px-8">
       <button
-        className=" flex-col justify-center items-center hidden lg:flex"
+        className=" flex-col justify-center items-center hidden lg:flex bg-transparent focus:outline-none -webkit-tap-highlight-color-transparent"
         onClick={handleClicked}
       >
-        <span
-          className={`bg-dark dark:bg-light block transition-all duration-200 ease-out h-0.5 w-6 rounded-sm -translate-y-0.5 ${
-            isOpen ? "rotate-45 translate-y-1" : "-translate-y-0.5"
-          }`}
-        ></span>
-        <span
-          className={`bg-dark dark:bg-light block transition-all duration-200 ease-out h-0.5 w-6 rounded-sm my-0.5 ${
-            isOpen ? "opacity-0" : "opacity-100"
-          }`}
-        ></span>
-        <span
-          className={`bg-dark dark:bg-light block transition-all duration-200 ease-out h-0.5 w-6 rounded-sm -translate-y-0.5 ${
-            isOpen ? "-rotate-45 -translate-y-1" : "translate-y-0.5"
-          }`}
-        ></span>
+        <div ref={menuRef}>
+          <span
+            className={`bg-dark dark:bg-light block transition-all duration-200 ease-out h-0.5 w-6 rounded-sm -translate-y-0.5 ${
+              isOpen ? "rotate-45 translate-y-1" : "-translate-y-0.5"
+            }`}
+          ></span>
+          <span
+            className={`bg-dark dark:bg-light block transition-all duration-200 ease-out h-0.5 w-6 rounded-sm my-0.5 ${
+              isOpen ? "opacity-0" : "opacity-100"
+            }`}
+          ></span>
+          <span
+            className={`bg-dark dark:bg-light block transition-all duration-200 ease-out h-0.5 w-6 rounded-sm -translate-y-0.5 ${
+              isOpen ? "-rotate-45 -translate-y-1" : "translate-y-0.5"
+            }`}
+          ></span>
+        </div>
       </button>
 
       <div className="w-full flex justify-between items-center lg:hidden">
