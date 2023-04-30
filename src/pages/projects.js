@@ -6,6 +6,9 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import project1 from "../../public/images/projects/KanbanBoard.png";
+import project2 from "../../public/images/projects/realtorPage.jpg";
+import project3 from "../../public/images/projects/RockPaperScissors.jpg";
+import project4 from "../../public/images/projects/TodoList.jpg";
 import { motion } from "framer-motion";
 import TransitionEffect from "@/components/TransitionEffect";
 
@@ -138,17 +141,6 @@ const projects = () => {
                 img={project1}
                 summary="Platform offers three main features to make task management easier and more efficient for users: Drag-n-Drop for easy rearrangement of tasks, Delete and Add for flexibility in task management, and Update/Edit for making changes to tasks without losing progress. These features provide a seamless experience for users to keep everything organized and running smoothly.
             "
-                link="/"
-                github="/"
-                type="Featured Project"
-              />
-            </div>
-            <div className="col-span-6 sm:col-span-12">
-              <Project
-                title="RealtorFF"
-                img={project1}
-                summary="Platform offers three main features to make task management easier and more efficient for users: Drag-n-Drop for easy rearrangement of tasks, Delete and Add for flexibility in task management, and Update/Edit for making changes to tasks without losing progress. These features provide a seamless experience for users to keep everything organized and running smoothly.
-            "
                 link="https://kanban-board-ruddy.vercel.app/"
                 github="https://github.com/FurkanFirat23/Kanban-Board"
                 type="Featured Project"
@@ -156,23 +148,33 @@ const projects = () => {
             </div>
             <div className="col-span-6 sm:col-span-12">
               <Project
-                title="RealtorFF"
-                img={project1}
-                summary="Platform offers three main features to make task management easier and more efficient for users: Drag-n-Drop for easy rearrangement of tasks, Delete and Add for flexibility in task management, and Update/Edit for making changes to tasks without losing progress. These features provide a seamless experience for users to keep everything organized and running smoothly.
+                title="Todo List"
+                img={project4}
+                summary="This project is a todo list web application that lets users add, edit, and delete tasks. The application has a simple user interface and is built using ReactJS. "
+                link="https://todo-list-react-rho-eight.vercel.app/"
+                github="https://github.com/FurkanFirat23/TodoListReact"
+                type="Featured Project"
+              />
+            </div>
+            <div className="col-span-6 sm:col-span-12">
+              <Project
+                title="Rock Paper Scissors"
+                img={project3}
+                summary="This project is a web application that lets users play the classic Rock Paper Scissors game against a computer opponent. The game has a simple user interface and is built using ReactJS.
             "
-                link="https://kanban-board-ruddy.vercel.app/"
-                github="https://github.com/FurkanFirat23/Kanban-Board"
+                link="https://rock-paper-scissors-game-dusky.vercel.app/"
+                github="https://github.com/FurkanFirat23/rock-paper-scissors-game"
                 type="Featured Project"
               />
             </div>
             <div className="col-span-12">
               <FeaturedProject
-                title="Kanban Board"
-                img={project1}
+                title="RealtorFF"
+                img={project2}
                 summary="Platform offers three main features to make task management easier and more efficient for users: Drag-n-Drop for easy rearrangement of tasks, Delete and Add for flexibility in task management, and Update/Edit for making changes to tasks without losing progress. These features provide a seamless experience for users to keep everything organized and running smoothly.
             "
-                link="https://kanban-board-ruddy.vercel.app/"
-                github="https://github.com/FurkanFirat23/Kanban-Board"
+                link="https://realtor-ff-reactjs.vercel.app/"
+                github="https://github.com/FurkanFirat23/realtorFF-reactjs"
                 type="Featured Project"
               />
             </div>
