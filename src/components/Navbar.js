@@ -71,12 +71,15 @@ const Navbar = () => {
   }, []);
 
   return (
-    <header className="flex w-full px-32 py-8 font-medium items-center justify-between dark:text-light relative z-10 lg:px-16 md:px-12 sm:px-8">
+    <header
+      className="flex w-full px-32 py-8 font-medium items-center justify-between dark:text-light relative z-10 lg:px-16 md:px-12 sm:px-8"
+      ref={menuRef}
+    >
       <button
         className=" flex-col justify-center items-center hidden lg:flex bg-transparent focus:outline-none -webkit-tap-highlight-color-transparent"
         onClick={handleClicked}
       >
-        <div ref={menuRef}>
+        <div>
           <span
             className={`bg-dark dark:bg-light block transition-all duration-200 ease-out h-0.5 w-6 rounded-sm -translate-y-0.5 ${
               isOpen ? "rotate-45 translate-y-1" : "-translate-y-0.5"
