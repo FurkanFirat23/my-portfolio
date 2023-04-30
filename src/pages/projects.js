@@ -9,6 +9,8 @@ import project1 from "../../public/images/projects/KanbanBoard.png";
 import project2 from "../../public/images/projects/realtorPage.jpg";
 import project3 from "../../public/images/projects/RockPaperScissors.jpg";
 import project4 from "../../public/images/projects/TodoList.jpg";
+import project5 from "../../public/images/projects/boostrapLinkedinClone.png";
+import project6 from "../../public/images/projects/PortfolioProject.jpg";
 import { motion } from "framer-motion";
 import TransitionEffect from "@/components/TransitionEffect";
 
@@ -178,28 +180,28 @@ const projects = () => {
                 type="Featured Project"
               />
             </div>
-            {/* <div className="col-span-6 sm:col-span-12">
+            <div className="col-span-6 sm:col-span-12">
               <Project
-                title="RealtorFF"
-                img={project1}
-                summary="Platform offers three main features to make task management easier and more efficient for users: Drag-n-Drop for easy rearrangement of tasks, Delete and Add for flexibility in task management, and Update/Edit for making changes to tasks without losing progress. These features provide a seamless experience for users to keep everything organized and running smoothly.
+                title="Bootstrap Linkedin Clone"
+                img={project5}
+                summary="Linkedin Clone made by Bootstrap 5.0.0-beta1. It is responsive and has a dark mode. It is a simple project that I made to improve my Bootstrap skills.
             "
-                link="https://kanban-board-ruddy.vercel.app/"
-                github="https://github.com/FurkanFirat23/Kanban-Board"
+                link="https://bootstrap-linkedinclone.vercel.app/"
+                github="https://github.com/FurkanFirat23/bootstrap-linkedinclone"
                 type="Featured Project"
               />
             </div>
             <div className="col-span-6 sm:col-span-12">
               <Project
-                title="RealtorFF"
-                img={project1}
-                summary="Platform offers three main features to make task management easier and more efficient for users: Drag-n-Drop for easy rearrangement of tasks, Delete and Add for flexibility in task management, and Update/Edit for making changes to tasks without losing progress. These features provide a seamless experience for users to keep everything organized and running smoothly.
+                title="Portfolio Website"
+                img={project6}
+                summary="Portfolio website made by Next.js and tailwindCSS. It is responsive and has a dark mode. It is a simple project that I made to improve my Next.js skills.
             "
-                link="https://kanban-board-ruddy.vercel.app/"
-                github="https://github.com/FurkanFirat23/Kanban-Board"
+                link="https://www.furkanfirat.com/"
+                github="https://github.com/FurkanFirat23/my-portfolio"
                 type="Featured Project"
               />
-            </div> */}
+            </div>
           </div>
         </Layout>
       </main>
