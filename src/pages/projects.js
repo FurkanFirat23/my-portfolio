@@ -178,7 +178,7 @@ const projects = () => {
                 type="Featured Project"
               />
             </div>
-            <div className="col-span-6 sm:col-span-12">
+            {/* <div className="col-span-6 sm:col-span-12">
               <Project
                 title="RealtorFF"
                 img={project1}
@@ -199,7 +199,7 @@ const projects = () => {
                 github="https://github.com/FurkanFirat23/Kanban-Board"
                 type="Featured Project"
               />
-            </div>
+            </div> */}
           </div>
         </Layout>
       </main>
