@@ -208,7 +208,6 @@ const projects = () => {
                 title="Task Manager Application"
                 img={project7}
                 summary="Task Manager application provides a seamless experience for users, helping them maintain an organized workflow and ensuring that tasks are efficiently managed. Whether you're an individual looking to stay on top of personal projects or a team collaborating on complex assignments, this application is designed to enhance your productivity and keep everything running smoothly.
-
                 Experience the convenience and efficiency of the Task Manager application, and take control of your tasks with ease.
             "
                 link="_blank"
