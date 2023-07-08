@@ -11,6 +11,7 @@ import project3 from "../../public/images/projects/RockPaperScissors.jpg";
 import project4 from "../../public/images/projects/TodoList.jpg";
 import project5 from "../../public/images/projects/boostrapLinkedinClone.png";
 import project6 from "../../public/images/projects/PortfolioProject.jpg";
+import project7 from "../../public/images/projects/taskmanager1.png";
 import { motion } from "framer-motion";
 import TransitionEffect from "@/components/TransitionEffect";
 
@@ -199,6 +200,19 @@ const projects = () => {
             "
                 link="https://www.furkanfirat.com/"
                 github="https://github.com/FurkanFirat23/my-portfolio"
+                type="Featured Project"
+              />
+            </div>
+            <div className="col-span-12">
+              <FeaturedProject
+                title="Task Manager Application"
+                img={project7}
+                summary="Task Manager application provides a seamless experience for users, helping them maintain an organized workflow and ensuring that tasks are efficiently managed. Whether you're an individual looking to stay on top of personal projects or a team collaborating on complex assignments, this application is designed to enhance your productivity and keep everything running smoothly.
+
+                Experience the convenience and efficiency of the Task Manager application, and take control of your tasks with ease.
+            "
+                link="_blank"
+                github="https://github.com/FurkanFirat23/TaskManagerApp"
                 type="Featured Project"
               />
             </div>
